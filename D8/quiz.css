@@ -1,0 +1,267 @@
+body{
+    font-size: 20px;
+}
+#titolo{
+    text-align: center;
+    width: 100%;
+    margin-top: 13px;
+    color : rgb(4, 86, 141);
+    font-size: 40px;
+    border-bottom: 1px solid rgb(7, 76, 99);
+    padding-bottom: 10px;
+}
+#container {
+    display: flex;
+    justify-content: center;
+}
+.invisibilitaPrimoCont{
+    visibility : hidden;
+}
+#impostazioni{
+    width: 350px;
+    border: rgb(16, 63, 104) solid 1px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px;
+}
+#impostazioni legend{
+    color: rgb(127, 83, 199);
+}
+#impostazioni input{
+    height: 20px;
+    cursor: pointer;
+}
+#impostazioni div{
+    color: rgb(8, 8, 8);
+}
+#tabella-1{
+    width: 150px;
+}
+#tabella-2{
+    width: 210px;
+}
+#tabella-1,#tabella-2 label{
+    color: rgb(5, 85, 103);
+    margin-left: 10px;
+}
+#numDomande,#difficolta{
+    margin-top: 15px;
+}
+#username{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 28px;
+    color: rgb(37, 45, 137);
+}
+#username input{
+    font-size: 23px;
+    margin-top: 10px;
+    border: solid rgb(2, 57, 91) 1px;
+    border-radius: 5px;
+}
+#inizia{
+    text-align: center;
+    margin-top: 25px;
+}
+#btnSubmit{
+    background-color: rgb(7, 73, 117);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+#btnSubmit:hover{
+    background-color: rgba(3, 81, 103, 0.591);
+}
+
+
+/*FINE PRIMA PARTE*/
+#domanda-Cont{
+    position: absolute;
+    left: 33%;
+    top: 33%;
+    width: 600px;
+}
+#domanda{
+    font-size: 33px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+#tableSec{
+margin-left: -15px;
+}
+.btns{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 20px;
+    border: 0;
+    background-color: rgba(0, 74, 127, 0.959);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    color: white;
+}
+#counter-Domande{
+    position: absolute;
+    left: 12%;
+    top: 14%;
+    border: solid 1px rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(7, 157, 187);
+    padding : 5px;
+}
+.visSecondoContenuto{
+    visibility: hidden;
+}
+#usernPunt{
+    position: absolute;
+    left: 49%;
+}
+#verifica{
+    display: flex;
+    justify-content: center;
+}
+#btn-verifica{
+    background-color: rgb(7, 117, 117);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+#btn-verifica:hover{
+    background-color: rgb(4, 88, 60);
+}
+#diff{
+    position: absolute;
+    left: 80%;
+    top: 21%;
+    border: solid 1px rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(1, 54, 230);
+    padding : 5px;
+}
+#numDom{
+    position: absolute;
+    left: 80%;
+    top: 14%;
+    border: solid 1px rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(2, 7, 92);
+    padding : 5px;
+}
+#next{
+    display: flex;
+    justify-content: center;
+}
+#btn-next{
+    background-color: rgb(7, 117, 117);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+#btn-next:hover{
+    background-color: rgb(4, 88, 60);
+}
+
+.hidden-Verifica{
+    visibility: hidden;
+}
+#verificaN{
+    display: flex;
+    justify-content: center;
+}
+.btn-verificaN{
+    position: absolute;
+    background-color: rgb(7, 117, 117);
+    color: white;
+    border: 0;
+    left: 47.3%;
+    top: 81%;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+.btn-verificaN:hover{
+    background-color: rgb(4, 88, 60);
+}
+
+#next2{
+    display: flex;
+    justify-content: center;
+}
+#btn-next2{
+    position: absolute;
+    top: 91%;
+    background-color: rgb(7, 117, 117);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+#btn-next2:hover{
+    background-color: rgb(4, 88, 60);
+}
+
+#next3{
+    display: flex;
+    justify-content: center;
+}
+#btn-next3{
+    position: absolute;
+    top: 86%;
+    background-color: rgb(7, 117, 117);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+#btn-next3:hover{
+    background-color: rgb(4, 88, 60);
+}
+#next4{
+    display: flex;
+    justify-content: center;
+}
+#btn-next4{
+    position: absolute;
+    top: 91%;
+    left: 46.5%;
+    background-color: rgb(7, 117, 117);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+#btn-next4:hover{
+    background-color: rgb(4, 88, 60);
+}
+#commento{
+    font-size: 15px;
+    position: absolute;
+    left: 3%;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <script src="quiz.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="titolo">QUIZ</h1>
+    </header>
+    <div id="tutto">
+      <div id="container">
+        <div id="commento">
+          NON SONO RIUSCITO A CONTINUARE <br />
+          LE DOMANDE E LA DIFFICOLTA' <br />
+          PER LA MANCANZA DI TEMPO
+        </div>
+        <div id="usernPunt" class="visSecondoContenuto">
+            s
+        </div>
+        <fieldset id="impostazioni">
+          <legend>Impostazioni</legend>
+          <div id="difficolta">Seleziona la difficoltà</div>
+          <table id="tabella-1">
+            <tr>
+              <td><label>Facile</label></td>
+              <td><input type="radio" name="difficolta" value="facile" /></td>
+            </tr>
+            <tr>
+              <td><label>Difficile</label></td>
+              <td>
+                <input type="radio" name="difficolta" value="difficile" />
+              </td>
+            </tr>
+          </table>
+          <div id="numDomande">Seleziona il numero di domande</div>
+          <table id="tabella-2">
+            <tr>
+              <td><label>5</label></td>
+              <td><input type="radio" name="numeroD" value="5" /></td>
+            </tr>
+            <tr>
+              <td><label>10</label></td>
+              <td><input type="radio" name="numeroD" value="10" /></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      <div id="username">
+        <label>Username</label>
+        <br />
+        <input
+          name="user"
+          type="username"
+          placeholder="inserisci il tuo username"
+        />
+      </div>
+
+      <div id="inizia">
+        <button
+          id="btnSubmit"
+          type="submit"
+          onclick="inviaImpostazioni(); cambioContenuto()"
+        >
+          Inizia
+        </button>
+      </div>
+    </div>
+
+    <div id="secondoContenuto" class="visSecondoContenuto">
+      <div id="domanda-Cont">
+        <div id="domanda">'What does CPU stand for?'</div>
+        <table id="tableSec">
+          <tr>
+            <td>
+              <input type="radio" id="esatta" name="risp" value="true" />
+              <button class="btns" id="true">'Central Process Unit'</button>
+            </td>
+            <td>
+              <button class="btns">'Computer Personal Unit'</button>
+              <input type="radio" class="sbagliata" name="risp" value="false" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" class="sbagliata" name="risp" value="false" />
+              <button class="btns">'Central Processor Unit'</button>
+            </td>
+            <td>
+              <button class="btns">'Central Processing Unit'</button>
+              <input type="radio" class="sbagliata" name="risp" value="false" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="diff">Difficolta :</div>
+      <div id="numDom">Numero Domande :</div>
+      <div id="counter-Domande">Domanda n°1</div>
+      <div id="cont-Ver">
+        <div id="verifica">
+          <button id="btn-verifica" onclick="controlloRisposta()">
+            Verifica
+          </button>
+        </div>
+        <div id="verificaN" class="hidden-Verifica">
+          <button class="btn-verificaN" onclick="controlloRisposta2()">
+            Verifica
+          </button>
+        </div>
+        <div>
+          <div id="next">
+            <button
+              id="btn-next"
+              onclick="prossima(), nuoveDomande(), nuovaVerifica(), nuovoNext()">
+              Prossima
+            </button>
+          </div>
+          <div id="next2" class="hidden-Verifica">
+            <button
+              id="btn-next2"
+              onclick="prossima2(),nuoveDomande2(), rimuoviHidden()"
+            >
+              Prossima
+            </button>
+          </div>
+          <div id="next4" class="hidden-Verifica" onclick="fine(), puntUser()">
+            <button id="btn-next4">Fine</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
